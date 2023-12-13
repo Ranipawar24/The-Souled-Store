@@ -57,14 +57,16 @@ export default function ImageSlider({ w1, w2, w3, w4 }) {
               marginTop: "-0.1rem",
               zIndex: 1,
               position: "relative",
-            }}>
+            }}
+          >
             <Fade {...properties}>
               {slideImages.map((image, index) => (
                 <div key={index}>
                   <div
                     style={{
                       ...divStyle,
-                    }}>
+                    }}
+                  >
                     <img
                       src={image.url}
                       style={{ zIndex: 0 }}
@@ -85,14 +87,16 @@ export default function ImageSlider({ w1, w2, w3, w4 }) {
             margin: 0,
             padding: 0,
             marginTop: "-0.1rem",
-          }}>
+          }}
+        >
           <Fade {...properties}>
             {slideImages.map((image, index) => (
               <div
                 key={index}
                 style={{
                   ...divStyle,
-                }}>
+                }}
+              >
                 <img src={image.url} maxHeight="27rem" width="100%" alt="" />
               </div>
             ))}
