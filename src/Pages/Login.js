@@ -62,13 +62,15 @@ export default function Login() {
                 display: "flex",
                 flexDirection: "row",
                 justifyContent: "center",
-              }}>
+              }}
+            >
               <Button
                 width="40%"
                 height="45px"
                 bg="#117a7a"
                 color="white"
-                fontWeight="800">
+                fontWeight="800"
+              >
                 LOGIN
               </Button>
               <Link to="/signup">
@@ -80,7 +82,8 @@ export default function Login() {
                     outline: "2px solid transparent",
                     outlineOffset: "2px",
                     width: "12rem",
-                  }}>
+                  }}
+                >
                   REGISTER
                 </button>
               </Link>
@@ -90,19 +93,22 @@ export default function Login() {
               width="80%"
               height="61%"
               border="1px solid grey"
-              margin="10% 10%">
+              margin="10% 10%"
+            >
               <Input
                 value={email}
                 typ="text"
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder=" Enter Email ID"
-                className="loginInput"></Input>
+                className="loginInput"
+              ></Input>
               <Input
                 value={password}
                 type="password"
                 onChange={(e) => setPassword(e.target.value)}
                 placeholder=" Enter Password"
-                className="loginInput"></Input>
+                className="loginInput"
+              ></Input>
               <Text
                 className="error"
                 style={{
@@ -111,7 +117,8 @@ export default function Login() {
                   justifyContent: "center",
                   height: "1.5rem",
                   marginBottom: 0,
-                }}>
+                }}
+              >
                 {errorMessage}
               </Text>
               <>
@@ -124,7 +131,8 @@ export default function Login() {
                     <Text
                       color="#ed2e30"
                       textDecoration="underline"
-                      cursor="pointer">
+                      cursor="pointer"
+                    >
                       Create Account
                     </Text>
                   </Link>
