@@ -58,14 +58,12 @@ export default function Footer() {
         <>
           <Text
             className="topheading1"
-            style={{ marginTop: "20px", fontSize: "25px", height: "45px" }}
-          >
+            style={{ marginTop: "20px", fontSize: "25px", height: "45px" }}>
             <span style={{ marginTop: "10px" }}>HOMEGROWN INDIAN BRAND</span>
           </Text>
           <Text
             className="topheading2"
-            style={{ height: "30px", overflow: "hidden", fontSize: "20px" }}
-          >
+            style={{ height: "30px", overflow: "hidden", fontSize: "20px" }}>
             Over
             <span style={{ fontWeight: "600", margin: "0 10px" }}>
               6 Million
@@ -201,8 +199,7 @@ export default function Footer() {
               paddingTop: 0,
               fontSize: "0.9rem",
             }}
-            className="footerText"
-          >
+            className="footerText">
             COD Available
           </Text>
         </Flex>
@@ -214,8 +211,7 @@ export default function Footer() {
               paddingTop: 0,
               fontSize: "0.9rem",
             }}
-            className="footerText"
-          >
+            className="footerText">
             30 Days Easy Returns
           </Text>
         </Flex>
@@ -225,8 +221,7 @@ export default function Footer() {
             style={{
               padding: 0,
             }}
-            className="footerText"
-          >
+            className="footerText">
             EXPERIENCE THE SOULED STORE APP
           </Text>
         </Flex>
@@ -235,8 +230,7 @@ export default function Footer() {
             style={{
               width: "10rem",
               overflow: "hidden",
-            }}
-          >
+            }}>
             <Link to="https://play.google.com/store/apps/details?id=com.thesouledstore">
               <img src={playstore} width="150px" alt="" />
             </Link>
@@ -245,8 +239,7 @@ export default function Footer() {
             style={{
               width: "10rem",
               overflow: "hidden",
-            }}
-          >
+            }}>
             <Link to="https://apps.apple.com/us/app/thesouledstore/id1493897434?ls=1">
               <img src={appstore} width="150px" alt="" />
             </Link>
@@ -257,8 +250,7 @@ export default function Footer() {
             justifyContent: "flex-end",
             padding: "0 5%",
             margin: "1rem 0",
-          }}
-        >
+          }}>
           <Text className="footerText" style={{ fontWeight: 600 }}>
             Follow Us:
           </Text>
@@ -270,8 +262,7 @@ export default function Footer() {
                   background: "#6081c0",
                   padding: "5px 8px",
                   margin: "0 5px",
-                }}
-              >
+                }}>
                 <BiLogoFacebook
                   style={{
                     fontSize: "1.3rem",
@@ -288,8 +279,7 @@ export default function Footer() {
                   background: "#c03694",
                   padding: "5px 8px",
                   margin: "0 5px",
-                }}
-              >
+                }}>
                 <AiOutlineInstagram
                   style={{
                     fontSize: "1.3rem",
@@ -306,8 +296,7 @@ export default function Footer() {
                   background: "#f9b927",
                   padding: "5px 8px",
                   margin: "0 5px",
-                }}
-              >
+                }}>
                 <FaSnapchat
                   style={{
                     fontSize: "1.3rem",
@@ -324,8 +313,7 @@ export default function Footer() {
                   background: "#4abbe9",
                   padding: "5px 8px",
                   margin: "0 5px",
-                }}
-              >
+                }}>
                 <BsTwitter
                   style={{
                     fontSize: "1.3rem",
@@ -344,8 +332,7 @@ export default function Footer() {
                 margin: "20px",
                 flexDirection: "column",
                 alignItems: "center",
-              }}
-            >
+              }}>
               <Flex>
                 <Text className="footerText">100% Secure Payment:</Text>
               </Flex>
@@ -393,8 +380,7 @@ export default function Footer() {
                 justifyContent: "space-around",
                 margin: "10px",
                 flexWrap: "wrap",
-              }}
-            >
+              }}>
               <Link
                 to="/category"
                 style={{ textDecoration: "none" }}
@@ -402,8 +388,7 @@ export default function Footer() {
                   Banner: bannerT,
                   data: productWomenTshirtData,
                   Heading: "Oversized Women T-Shirt",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Oversized T-Shirts</Text>
               </Link>
               <Link
@@ -413,8 +398,7 @@ export default function Footer() {
                   Banner: bannerBS,
                   data: productWomenshirtsData,
                   Heading: "Women's Shirts",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Shirts</Text>
               </Link>
               <Link
@@ -424,8 +408,7 @@ export default function Footer() {
                   Banner: bannerT,
                   data: productWomenTshirtData,
                   Heading: "Women T-Shirt",
-                }}
-              >
+                }}>
                 <Text className="footerLink">T-Shirts</Text>
               </Link>
               <Link
@@ -434,8 +417,7 @@ export default function Footer() {
                 state={{
                   data: productWomenkurtiData,
                   Heading: "Women Kurti",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Kurti</Text>
               </Link>
               <Link
@@ -446,8 +428,7 @@ export default function Footer() {
                   data: productMenJoggersData,
                   Heading: "Men's Joggers",
                   gender: "Male",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Joggers</Text>
               </Link>
               <Link
@@ -458,8 +439,7 @@ export default function Footer() {
                   gender: "Male",
                   data: productMenJeansData,
                   Heading: "Men's Jeans",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Jeans</Text>
               </Link>
               <Link
@@ -470,8 +450,7 @@ export default function Footer() {
                   gender: "Male",
                   data: productMenShortsData,
                   Heading: "Men's Shorts",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Shorts</Text>
               </Link>
               <Link
@@ -481,8 +460,7 @@ export default function Footer() {
                   gender: "Male",
                   Heading: "Men's Shorts",
                   data: productMenPyjamasData,
-                }}
-              >
+                }}>
                 <Text className="footerLink">Pyjamas</Text>
               </Link>
               <Link
@@ -491,8 +469,7 @@ export default function Footer() {
                 state={{
                   data: productMenTrouserData,
                   Heading: "Men's Trouser",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Trouser</Text>
               </Link>
             </Flex>
@@ -504,16 +481,14 @@ export default function Footer() {
                 justifyContent: "space-around",
                 margin: "10px",
                 flexWrap: "wrap",
-              }}
-            >
+              }}>
               <Link
                 to="/category"
                 style={{ textDecoration: "none" }}
                 state={{
                   data: productMenTshirtData,
                   Heading: "Men's T-Shirts",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Oversized T-Shirts </Text>
               </Link>
 
@@ -523,8 +498,7 @@ export default function Footer() {
                 state={{
                   data: productMenShirtData,
                   Heading: "Men's Shirt",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Shirts </Text>
               </Link>
 
@@ -534,8 +508,7 @@ export default function Footer() {
                 state={{
                   data: productMenSweaterData,
                   Heading: "Men's Sweater",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Sweater </Text>
               </Link>
 
@@ -546,8 +519,7 @@ export default function Footer() {
                   data: productMenKurtaData,
 
                   Heading: "Men's Kurta",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Kurta </Text>
               </Link>
 
@@ -558,8 +530,7 @@ export default function Footer() {
                   data: productMenHoodieData,
 
                   Heading: "Men's Hoodie",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Hoodie </Text>
               </Link>
 
@@ -569,8 +540,7 @@ export default function Footer() {
                 state={{
                   data: productMenTracksuitData,
                   Heading: "Men's Tracksuit",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Tracksuit </Text>
               </Link>
               <Link
@@ -581,8 +551,7 @@ export default function Footer() {
                   data: productMenJoggersData,
                   Heading: "Men's Joggers",
                   gender: "Male",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Joggers</Text>
               </Link>
               <Link
@@ -593,8 +562,7 @@ export default function Footer() {
                   gender: "Male",
                   data: productMenJeansData,
                   Heading: "Men's Jeans",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Jeans</Text>
               </Link>
               <Link
@@ -605,8 +573,7 @@ export default function Footer() {
                   gender: "Male",
                   data: productMenShortsData,
                   Heading: "Men's Shorts",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Shorts</Text>
               </Link>
               <Link
@@ -616,8 +583,7 @@ export default function Footer() {
                   gender: "Male",
                   Heading: "Men's Shorts",
                   data: productMenPyjamasData,
-                }}
-              >
+                }}>
                 <Text className="footerLink">Pyjamas</Text>
               </Link>
               <Link
@@ -626,8 +592,7 @@ export default function Footer() {
                 state={{
                   data: productMenTrouserData,
                   Heading: "Men's Trouser",
-                }}
-              >
+                }}>
                 <Text className="footerLink">Trouser</Text>
               </Link>
             </Flex>
@@ -641,8 +606,7 @@ export default function Footer() {
             style={{
               padding: 0,
             }}
-            className="footerText"
-          >
+            className="footerText">
             The Souled Store 2023-24
           </Text>
         </Flex>
