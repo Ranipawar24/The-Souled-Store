@@ -637,7 +637,7 @@ export default function Footer() {
         )}
         <Flex style={{ justifyContent: "center", margin: "1rem 0" }}>
           <AiOutlineCopyrightCircle
-            style={{ color: "#58595b", paddingTop: "4px" }}
+            style={{ color: "#58595b", paddingTop: "3px" }}
           />
           <Text
             style={{
