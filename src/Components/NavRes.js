@@ -110,58 +110,6 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
     productMenPurpleData,
     productMenBeigeData,
   } = productsListFilter;
-  // const handleMouseEnter = (dropdown) => {
-  //   setIsDropDownOpen(dropdown);
-  // };
-
-  // const handleMouseLeave = () => {
-  //   setIsDropDownOpen(null);
-  // };
-
-  // const handleSearchInputChange = (event) => {
-  //   const newValue = event.target.value;
-  //   setSearchItem(newValue);
-  // };
-  // const handleSearchClick = async () => {
-  //   const searchData = await fetchDataByType(searchItem);
-  //   if (searchData.length > 0) {
-  //     const data = service(searchData);
-
-  //     navigation("/category", {
-  //       state: {
-  //         data: data,
-  //         Heading: "Search Results for",
-  //       },
-  //     });
-  //   }
-  // };
-
-  // async function handleItemClick(event) {
-  //   const clickedItem = event.target.textContent;
-  //   let storeData = [...productWomenCollection, ...productMenCollection];
-  //   const { uniqueBrands, uniqueSubCategory } = storeData;
-  //   let data = [];
-  //   if (uniqueBrands.includes(clickedItem)) {
-  //     data = await searchFetchData("brand", clickedItem);
-  //   } else if (uniqueSubCategory.includes(clickedItem)) {
-  //     data = await searchFetchData("subCategory", clickedItem);
-  //   } else {
-  //     console.log(
-  //       "User clicked on item not found in brand or category:",
-  //       clickedItem
-  //     );
-  //   }
-  //   if (data.length > 0) {
-  //     const searchdata = service(data);
-  //     console.log(searchdata);
-  //     navigation("/category", {
-  //       state: {
-  //         data: searchdata,
-  //         Heading: "Search Results for",
-  //       },
-  //     });
-  //   }
-  // }
 
   const btnRef = useRef();
   const handleClick = (event) => {
@@ -179,19 +127,6 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
     }, 100);
   };
 
-  // useEffect(() => {
-  //   const delay = 500;
-
-  //   const timer = setTimeout(() => {
-  //     if (searchItem !== "") {
-  //       let storeData = [...productMenCollection, ...productWomenCollection];
-  //       const value = isNamePresent(storeData, searchItem);
-  //       setSearchResults(value);
-  //     }
-  //   }, delay);
-
-  //   return () => clearTimeout(timer);
-  // }, [searchItem]);
   useEffect(() => {
     const handleScroll = () => {
       setScrollY(window.scrollY);
@@ -207,7 +142,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
         <>
           <Flex
             justifyContent="space-between"
-            className={scrollY > 43 ? "navbar navbarscrolledRes" : "navbar"}>
+            className={scrollY > 43 ? "navbar navbarscrolledRes" : "navbar"}
+          >
             <Flex justifyContent="center" alignItems="center">
               <Link to="/">
                 <BiArrowBack style={{ padding: "1rem", fontSize: "2rem" }} />
@@ -223,7 +159,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                   flexDirection: "column",
                   justifyContent: "center",
                   alignItems: "center",
-                }}>
+                }}
+              >
                 <Text className="categoryH12">WISHLIST</Text>
                 {isLoggedIn && (
                   <>
@@ -240,7 +177,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
             <Box
               style={{
                 display: "flex",
-              }}>
+              }}
+            >
               {/* <Box
                 style={{
                   marginLeft: "20px",
@@ -303,7 +241,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
         <>
           <Flex
             justifyContent="space-between"
-            className={scrollY > 43 ? "navbar navbarscrolledRes" : "navbar"}>
+            className={scrollY > 43 ? "navbar navbarscrolledRes" : "navbar"}
+          >
             {pathname === "/shoppingcart" || pathname === "/product" ? (
               <Link to="/">
                 <BiArrowBack style={{ padding: "1rem", fontSize: "2rem" }} />
@@ -337,7 +276,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
             <Box
               style={{
                 display: "flex",
-              }}>
+              }}
+            >
               {/* <Box
                 style={{
                   marginLeft: "20px",
@@ -450,7 +390,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
         isOpen={isOpen}
         placement="left"
         onClose={onCloseHandle}
-        finalFocusRef={btnRef}>
+        finalFocusRef={btnRef}
+      >
         <DrawerOverlay />
         <div className="barback"></div>
         <DrawerContent
@@ -462,7 +403,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
             width: "80%",
             backgroundColor: "white",
             height: "100vh",
-          }}>
+          }}
+        >
           <DrawerBody>
             <Flex className="barbox1">
               <Image src={barlogo} alt="logo" className="logoImgbar" />
@@ -472,19 +414,22 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                   marginLeft: "6rem",
                   fontWeight: "600",
                   textTransform: "capitalize",
-                }}>
+                }}
+              >
                 {user?.name}
               </Text>
             </Flex>
             <Flex className="barboxStyle1">
               <Button
                 className="barboxStyle1button"
-                onClick={() => setShowSection("Men")}>
+                onClick={() => setShowSection("Men")}
+              >
                 Men
               </Button>
               <Button
                 className="barboxStyle1button2"
-                onClick={() => setShowSection("Women")}>
+                onClick={() => setShowSection("Women")}
+              >
                 Women
               </Button>
             </Flex>
@@ -495,7 +440,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                     defaultIndex={[0]}
                     allowMultiple
                     marginTop="0.1rem"
-                    width="100%">
+                    width="100%"
+                  >
                     <AccordionItem className="accodianItem">
                       <h2 style={{ margin: 0 }}>
                         <AccordionButton className="accodianbutton">
@@ -503,7 +449,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             className="HTexth3A"
                             as="span"
                             flex="1"
-                            textAlign="left">
+                            textAlign="left"
+                          >
                             Topwear
                           </Box>
                           <AccordionIcon />
@@ -516,7 +463,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                           state={{
                             data: productMenTshirtData,
                             Heading: "Men's T-Shirts",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">
                             Oversized T-Shirts
                           </Text>
@@ -527,7 +475,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                           state={{
                             data: productMenShirtData,
                             Heading: "Men's Shirt",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Shirts</Text>
                         </Link>
                         <Link
@@ -537,7 +486,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             data: productMenSweaterData,
 
                             Heading: "Men's Sweater",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Sweater</Text>
                         </Link>
                         <Link
@@ -547,7 +497,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             data: productMenKurtaData,
 
                             Heading: "Men's Kurta",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Kurta</Text>
                         </Link>
                         <Link
@@ -557,7 +508,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             data: productMenHoodieData,
 
                             Heading: "Men's Hoodie",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Hoodie</Text>
                         </Link>
                         <Link
@@ -567,7 +519,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             data: productMenTracksuitData,
 
                             Heading: "Men's Tracksuit",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Tracksuit</Text>
                         </Link>
                       </AccordionPanel>
@@ -580,7 +533,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             as="span"
                             flex="1"
                             textAlign="left"
-                            className="HTexth3A">
+                            className="HTexth3A"
+                          >
                             BottomWear
                           </Box>
                           <AccordionIcon />
@@ -595,7 +549,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             data: productMenJoggersData,
                             Heading: "Men's Joggers",
                             gender: "Male",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mT10">Joggers</Text>
                         </Link>
                         <Link
@@ -606,7 +561,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             gender: "Male",
                             data: productMenJeansData,
                             Heading: "Men's Jeans",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Jeans</Text>
                         </Link>
                         <Link
@@ -617,7 +573,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             gender: "Male",
                             data: productMenShortsData,
                             Heading: "Men's Shorts",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Shorts</Text>
                         </Link>
                         <Link
@@ -627,7 +584,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             gender: "Male",
                             Heading: "Men's Shorts",
                             data: productMenPyjamasData,
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Pyjamas</Text>
                         </Link>
                         <Link
@@ -636,7 +594,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                           state={{
                             data: productMenTrouserData,
                             Heading: "Men's Trouser",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Trouser</Text>
                         </Link>
                       </AccordionPanel>
@@ -648,7 +607,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             as="span"
                             flex="1"
                             textAlign="left"
-                            className="HTexth3A">
+                            className="HTexth3A"
+                          >
                             SHOES BY COLOR
                           </Box>
                           <AccordionIcon />
@@ -660,7 +620,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             style={{
                               flexDirection: "column",
                               minWidth: "10rem",
-                            }}>
+                            }}
+                          >
                             <Link
                               to="/category"
                               style={{ textDecoration: "none" }}
@@ -668,7 +629,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenBlackData,
 
                                 Heading: "Men Black Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1 mT10"> Black</Text>
                             </Link>
                             <Link
@@ -678,7 +640,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenBrownData,
 
                                 Heading: "Men Brown Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Brown</Text>
                             </Link>
                             <Link
@@ -688,7 +651,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenWhiteData,
 
                                 Heading: "Men White Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">White</Text>
                             </Link>
                             <Link
@@ -698,7 +662,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenGreyData,
 
                                 Heading: "Men Grey Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Grey</Text>
                             </Link>
                             <Link
@@ -708,7 +673,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenOrangeData,
 
                                 Heading: "Men Orange Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1 "> Orange</Text>
                             </Link>
 
@@ -719,7 +685,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenKhakiData,
 
                                 Heading: "Men Khaki Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Khaki</Text>
                             </Link>
                           </Flex>
@@ -728,7 +695,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                               flexDirection: "column",
 
                               minWidth: "10rem",
-                            }}>
+                            }}
+                          >
                             <Link
                               to="/category"
                               style={{ textDecoration: "none" }}
@@ -736,7 +704,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenBlueData,
 
                                 Heading: "Men Blue Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1 mT10">Blue</Text>
                             </Link>
                             <Link
@@ -746,7 +715,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenGreenData,
 
                                 Heading: "Men Green Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Green</Text>
                             </Link>
                             <Link
@@ -756,7 +726,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenRedData,
 
                                 Heading: "Men Red Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Red</Text>
                             </Link>
                             <Link
@@ -766,7 +737,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenPinkData,
 
                                 Heading: "Men Pink Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1 ">Pink</Text>
                             </Link>
                             <Link
@@ -776,7 +748,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenYellowData,
 
                                 Heading: "Men Yellow Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1 ">Yellow</Text>
                             </Link>
                             <Link
@@ -786,7 +759,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenPurpleData,
 
                                 Heading: "Men Purple Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Purple</Text>
                             </Link>
                           </Flex>
@@ -795,7 +769,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                               flexDirection: "column",
 
                               minWidth: "10rem",
-                            }}>
+                            }}
+                          >
                             <Link
                               to="/category"
                               style={{ textDecoration: "none" }}
@@ -803,7 +778,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenMaroonData,
 
                                 Heading: "Men Maroon Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1 mT10">Maroon</Text>
                             </Link>
 
@@ -814,7 +790,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenCharcoalData,
 
                                 Heading: "Men Charcoal Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Charcoal</Text>
                             </Link>
                             <Link
@@ -824,7 +801,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenSilverData,
 
                                 Heading: "Men Silver Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Silver</Text>
                             </Link>
                             <Link
@@ -834,7 +812,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenCreamData,
 
                                 Heading: "Men Cream Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Cream</Text>
                             </Link>
                             <Link
@@ -844,7 +823,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenOliveData,
 
                                 Heading: "Men Olive Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Olive</Text>
                             </Link>
                             <Link
@@ -854,7 +834,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productMenBeigeData,
 
                                 Heading: "Men Beige Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Beige</Text>
                             </Link>
                           </Flex>
@@ -870,7 +851,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                     defaultIndex={[0]}
                     allowMultiple
                     marginTop="0.1rem"
-                    width="100%">
+                    width="100%"
+                  >
                     <AccordionItem className="accodianItem">
                       <h2 style={{ margin: 0 }}>
                         <AccordionButton className="accodianbutton">
@@ -878,7 +860,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             className="HTexth3A"
                             as="span"
                             flex="1"
-                            textAlign="left">
+                            textAlign="left"
+                          >
                             Topwear
                           </Box>
                           <AccordionIcon />
@@ -892,7 +875,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             Banner: bannerT,
                             data: productWomenTshirtData,
                             Heading: "Oversized Women T-Shirt",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mT10">
                             Oversized T-Shirts
                           </Text>
@@ -904,7 +888,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             Banner: bannerBS,
                             data: productWomenshirtsData,
                             Heading: "Women's Shirts",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Shirts</Text>
                         </Link>
                         <Link
@@ -914,7 +899,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             Banner: bannerT,
                             data: productWomenTshirtData,
                             Heading: "Women T-Shirt",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">T-Shirts</Text>
                         </Link>
                         <Link
@@ -923,7 +909,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                           state={{
                             data: productWomenkurtiData,
                             Heading: "Women Kurti",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Kurti</Text>
                         </Link>
                       </AccordionPanel>
@@ -936,7 +923,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             as="span"
                             flex="1"
                             textAlign="left"
-                            className="HTexth3A">
+                            className="HTexth3A"
+                          >
                             BottomWear
                           </Box>
                           <AccordionIcon />
@@ -950,7 +938,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             Banner: jog,
                             Heading: "Women Joggers",
                             data: productWomenJoggersData,
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mT10">Joggers</Text>
                         </Link>
                         <Link
@@ -959,7 +948,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                           state={{
                             data: productWomenJeansData,
                             Heading: "Women Jeans",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Jeans</Text>
                         </Link>
                         <Link
@@ -969,7 +959,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             Banner: bannerJ,
                             data: productWomenJumpsuitData,
                             Heading: "Women Jumpsuit",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Jumpsuit</Text>
                         </Link>
                       </AccordionPanel>
@@ -981,7 +972,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             as="span"
                             flex="1"
                             textAlign="left"
-                            className="HTexth3A">
+                            className="HTexth3A"
+                          >
                             SHOES BY COLOR
                           </Box>
                           <AccordionIcon />
@@ -993,7 +985,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             style={{
                               flexDirection: "column",
                               minWidth: "10rem",
-                            }}>
+                            }}
+                          >
                             <Link
                               to="/category"
                               style={{ textDecoration: "none" }}
@@ -1001,7 +994,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productWomenBlackData,
                                 Banner: bB,
                                 Heading: "Women Black Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1 mT10"> Black</Text>
                             </Link>
                             <Link
@@ -1010,7 +1004,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                               state={{
                                 data: productWomenBrownData,
                                 Heading: "Women Brown Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Brown</Text>
                             </Link>
                             <Link
@@ -1020,7 +1015,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 Banner: wB,
                                 data: productWomenWhiteData,
                                 Heading: "Women White Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">White</Text>
                             </Link>
                             <Link
@@ -1029,7 +1025,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                               state={{
                                 data: productWomenGreyData,
                                 Heading: "Women Grey Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Grey</Text>
                             </Link>
                             <Link
@@ -1038,7 +1035,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                               state={{
                                 data: productWomenOrangeData,
                                 Heading: "Women Orange Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1"> Orange</Text>
                             </Link>
                           </Flex>
@@ -1046,7 +1044,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             style={{
                               flexDirection: "column",
                               minWidth: "10rem",
-                            }}>
+                            }}
+                          >
                             <Link
                               to="/category"
                               style={{ textDecoration: "none" }}
@@ -1054,7 +1053,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productWomenBlueData,
                                 Heading: "Women Blue Collection",
                                 Banner: blueBanner,
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1  mT10">Blue</Text>
                             </Link>
                             <Link
@@ -1063,7 +1063,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                               state={{
                                 data: productWomenGreenData,
                                 Heading: "Women Green Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Green</Text>
                             </Link>
 
@@ -1074,7 +1075,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productWomenKhakiData,
 
                                 Heading: "Women Khaki Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Khaki</Text>
                             </Link>
                             <Link
@@ -1083,7 +1085,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                               state={{
                                 data: productWomenMaroonData,
                                 Heading: "Women Maroon Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Maroon</Text>
                             </Link>
                             <Link
@@ -1093,7 +1096,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productWomenLavenderData,
                                 Banner: bL,
                                 Heading: "Women Lavender Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Lavender</Text>
                             </Link>
                           </Flex>
@@ -1101,14 +1105,16 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                             style={{
                               flexDirection: "column",
                               minWidth: "10rem",
-                            }}>
+                            }}
+                          >
                             <Link
                               to="/category"
                               style={{ textDecoration: "none" }}
                               state={{
                                 data: productWomenRedData,
                                 Heading: "Women Red Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Red</Text>
                             </Link>
                             <Link
@@ -1118,7 +1124,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productWomenPinkData,
                                 Banner: bP,
                                 Heading: "Women Pink Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Pink</Text>
                             </Link>
                             <Link
@@ -1128,7 +1135,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productWomenYellowData,
 
                                 Heading: "Women Yellow Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Yellow</Text>
                             </Link>
                             <Link
@@ -1138,7 +1146,8 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
                                 data: productWomenPurpleData,
 
                                 Heading: "Women Purple Collection",
-                              }}>
+                              }}
+                            >
                               <Text className="navdropboxh1">Purple</Text>
                             </Link>
                           </Flex>

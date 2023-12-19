@@ -160,7 +160,8 @@ export default function Dropbox({
           <ListItem
             className={scrollY > 43 ? "navlist2" : "navList"}
             onMouseEnter={() => handleMouseEnter("TOPWEAR")}
-            onMouseLeave={() => handleMouseLeave()}>
+            onMouseLeave={() => handleMouseLeave()}
+          >
             TOPWEAR
             <IconButton
               variant="outline"
@@ -177,7 +178,8 @@ export default function Dropbox({
                     onMouseLeave={() => handleMouseLeave()}
                     className={
                       scrollY > 43 ? "navdropbox tW2" : "navdropbox tW"
-                    }>
+                    }
+                  >
                     <Link
                       to="/category"
                       style={{ textDecoration: "none" }}
@@ -185,7 +187,8 @@ export default function Dropbox({
                         Banner: bannerT,
                         data: productWomenTshirtData,
                         Heading: "Oversized Women T-Shirt",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1 mT10">
                         Oversized T-Shirts
                       </Text>
@@ -197,7 +200,8 @@ export default function Dropbox({
                         Banner: bannerBS,
                         data: productWomenshirtsData,
                         Heading: "Women's Shirts",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Shirts</Text>
                     </Link>
                     <Link
@@ -207,7 +211,8 @@ export default function Dropbox({
                         Banner: bannerT,
                         data: productWomenTshirtData,
                         Heading: "Women T-Shirt",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">T-Shirts</Text>
                     </Link>
                     <Link
@@ -216,7 +221,8 @@ export default function Dropbox({
                       state={{
                         data: productWomenkurtiData,
                         Heading: "Women Kurti",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Kurti</Text>
                     </Link>
                   </Box>
@@ -230,14 +236,16 @@ export default function Dropbox({
                     onMouseLeave={() => handleMouseLeave()}
                     className={
                       scrollY > 43 ? "navdropbox tw3" : "navdropbox tW3"
-                    }>
+                    }
+                  >
                     <Link
                       to="/category"
                       style={{ textDecoration: "none" }}
                       state={{
                         data: productMenTshirtData,
                         Heading: "Men's T-Shirts",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1 mT10">
                         Oversized T-Shirts
                       </Text>
@@ -248,7 +256,8 @@ export default function Dropbox({
                       state={{
                         data: productMenShirtData,
                         Heading: "Men's Shirt",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Shirts</Text>
                     </Link>
                     <Link
@@ -257,7 +266,8 @@ export default function Dropbox({
                       state={{
                         data: productMenTshirtData,
                         Heading: "Men's T-Shirts",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">T-Shirts</Text>
                     </Link>
                     <Link
@@ -267,7 +277,8 @@ export default function Dropbox({
                         data: productMenSweaterData,
 
                         Heading: "Men's Sweater",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Sweater</Text>
                     </Link>
                     <Link
@@ -277,7 +288,8 @@ export default function Dropbox({
                         data: productMenKurtaData,
 
                         Heading: "Men's Kurta",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Kurta</Text>
                     </Link>
                     <Link
@@ -287,7 +299,8 @@ export default function Dropbox({
                         data: productMenHoodieData,
 
                         Heading: "Men's Hoodie",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Hoodie</Text>
                     </Link>
                     <Link
@@ -297,7 +310,8 @@ export default function Dropbox({
                         data: productMenTracksuitData,
 
                         Heading: "Men's Tracksuit",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Tracksuit</Text>
                     </Link>
                   </Box>
@@ -308,7 +322,8 @@ export default function Dropbox({
           <ListItem
             className={scrollY > 43 ? "navlist2" : "navList"}
             onMouseEnter={() => handleMouseEnter("BOTTOMWEAR")}
-            onMouseLeave={() => handleMouseLeave()}>
+            onMouseLeave={() => handleMouseLeave()}
+          >
             BOTTOMWEAR
             <IconButton
               variant="outline"
@@ -325,7 +340,8 @@ export default function Dropbox({
                     onMouseLeave={() => handleMouseLeave()}
                     className={
                       scrollY > 43 ? "navdropbox bW2" : "navdropbox bW"
-                    }>
+                    }
+                  >
                     <Link
                       to="/category"
                       style={{ textDecoration: "none" }}
@@ -333,7 +349,8 @@ export default function Dropbox({
                         Banner: jog,
                         Heading: "Women Joggers",
                         data: productWomenJoggersData,
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1 mT10">Joggers</Text>
                     </Link>
                     <Link
@@ -342,7 +359,8 @@ export default function Dropbox({
                       state={{
                         data: productWomenJeansData,
                         Heading: "Women Jeans",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Jeans</Text>
                     </Link>
                     <Link
@@ -352,7 +370,8 @@ export default function Dropbox({
                         Banner: bannerJ,
                         data: productWomenJumpsuitData,
                         Heading: "Women Jumpsuit",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Jumpsuit</Text>
                     </Link>
                   </Box>
@@ -366,7 +385,8 @@ export default function Dropbox({
                     onMouseLeave={() => handleMouseLeave()}
                     className={
                       scrollY > 43 ? "navdropbox bW4" : "navdropbox bW3"
-                    }>
+                    }
+                  >
                     <Link
                       to="/category"
                       style={{ textDecoration: "none" }}
@@ -375,7 +395,8 @@ export default function Dropbox({
                         data: productMenJoggersData,
                         Heading: "Men's Joggers",
                         gender: "Male",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1 mT10">Joggers</Text>
                     </Link>
                     <Link
@@ -386,7 +407,8 @@ export default function Dropbox({
                         gender: "Male",
                         data: productMenJeansData,
                         Heading: "Men's Jeans",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Jeans</Text>
                     </Link>
                     <Link
@@ -397,7 +419,8 @@ export default function Dropbox({
                         gender: "Male",
                         data: productMenShortsData,
                         Heading: "Men's Shorts",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Shorts</Text>
                     </Link>
                     <Link
@@ -407,7 +430,8 @@ export default function Dropbox({
                         gender: "Male",
                         Heading: "Men's Shorts",
                         data: productMenPyjamasData,
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Pyjamas</Text>
                     </Link>
                     <Link
@@ -416,7 +440,8 @@ export default function Dropbox({
                       state={{
                         data: productMenTrouserData,
                         Heading: "Men's Trouser",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Trouser</Text>
                     </Link>
                   </Box>
@@ -427,7 +452,8 @@ export default function Dropbox({
           <ListItem
             className={scrollY > 43 ? "navlist2" : "navList"}
             onMouseEnter={() => handleMouseEnter("SHOP BY THEMES")}
-            onMouseLeave={() => handleMouseLeave()}>
+            onMouseLeave={() => handleMouseLeave()}
+          >
             SHOP BY BRANDS
             <IconButton
               variant="outline"
@@ -444,7 +470,8 @@ export default function Dropbox({
                     onMouseLeave={() => handleMouseLeave()}
                     className={
                       scrollY > 43 ? "navdropbox sBT2" : "navdropbox sBTW "
-                    }>
+                    }
+                  >
                     <Flex>
                       <Flex style={{ flexDirection: "column" }}>
                         <Link
@@ -454,7 +481,8 @@ export default function Dropbox({
                             data: productBewakoof,
 
                             Heading: "Bewakoof® Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mT10">Bewakoof®</Text>
                         </Link>
 
@@ -465,7 +493,8 @@ export default function Dropbox({
                             data: productCHIMPAAANZEE,
 
                             Heading: "CHIMPAAANZEE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">CHIMPAAANZEE</Text>
                         </Link>
                         <Link
@@ -475,7 +504,8 @@ export default function Dropbox({
                             data: productCampusSutra,
 
                             Heading: "Campus Sutra Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Campus Sutra</Text>
                         </Link>
                         <Link
@@ -485,7 +515,8 @@ export default function Dropbox({
                             data: productLoungeDreams,
 
                             Heading: "Lounge Dreams Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Lounge Dreams</Text>
                         </Link>
                         <Link
@@ -495,7 +526,8 @@ export default function Dropbox({
                             data: productInstafabPlus,
 
                             Heading: "Instafab Plus Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Instafab Plus</Text>
                         </Link>
                         <Link
@@ -504,7 +536,8 @@ export default function Dropbox({
                           state={{
                             data: productBewakoofAir,
                             Heading: "Bewakoof Air® 1.0 Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">
                             Bewakoof Air® 1.0
                           </Text>
@@ -516,7 +549,8 @@ export default function Dropbox({
                             data: productStyleQuotient,
 
                             Heading: "Style Quotient Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Style Quotient</Text>
                         </Link>
                         <Link
@@ -526,7 +560,8 @@ export default function Dropbox({
                             data: productRICKANDMORTY,
 
                             Heading: "RICK AND MORTY MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">
                             OFFICIAL RICK AND MORTY MERCHANDISE
                           </Text>
@@ -538,7 +573,8 @@ export default function Dropbox({
                             data: productHARRYPOTTER,
 
                             Heading: "HARRY POTTER MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             OFFICIAL HARRY POTTER MERCHANDISE
                           </Text>
@@ -551,7 +587,8 @@ export default function Dropbox({
                             data: productTOMJERRY,
 
                             Heading: "TOM & JERRY MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             OFFICIAL TOM & JERRY MERCHANDISE
                           </Text>
@@ -563,7 +600,8 @@ export default function Dropbox({
                             data: productCARTOONNETWORK,
 
                             Heading: "CARTOON NETWORK MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             OFFICIAL CARTOON NETWORK MERCHANDISE
                           </Text>
@@ -575,7 +613,8 @@ export default function Dropbox({
                             data: productDISNEYMERCHANDISE,
 
                             Heading: "DISNEY MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             OFFICIAL DISNEY MERCHANDISE
                           </Text>
@@ -587,7 +626,8 @@ export default function Dropbox({
                             data: productMARVEL,
 
                             Heading: "MARVEL MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             OFFICIAL MARVEL MERCHANDISE
                           </Text>
@@ -602,7 +642,8 @@ export default function Dropbox({
                             data: productBelliskey,
 
                             Heading: "Belliskey Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Belliskey</Text>
                         </Link>
                         <Link
@@ -612,7 +653,8 @@ export default function Dropbox({
                             data: productKotty,
 
                             Heading: "Kotty Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Kotty</Text>
                         </Link>
                         <Link
@@ -621,7 +663,8 @@ export default function Dropbox({
                           state={{
                             data: productHubberholme,
                             Heading: "Hubberholme Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Hubberholme</Text>
                         </Link>
 
@@ -632,7 +675,8 @@ export default function Dropbox({
                             data: productDRYSTATE,
 
                             Heading: "THE DRY STATE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mT10">
                             THE DRY STATE
                           </Text>
@@ -644,7 +688,8 @@ export default function Dropbox({
                             data: productPEANUTS,
 
                             Heading: "PEANUTS MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             OFFICIAL PEANUTS MERCHANDISE
                           </Text>
@@ -656,7 +701,8 @@ export default function Dropbox({
                             data: productLOONEYTUNES,
 
                             Heading: "LOONEY TUNES MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             OFFICIAL LOONEY TUNES MERCHANDISE
                           </Text>
@@ -668,7 +714,8 @@ export default function Dropbox({
                             data: productGARFIELDMERCHANDISE,
 
                             Heading: "GARFIELD MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             OFFICIAL GARFIELD MERCHANDISE
                           </Text>
@@ -680,7 +727,8 @@ export default function Dropbox({
                             data: productMINIONSMERCHANDISE,
 
                             Heading: "MINIONS MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             OFFICIAL MINIONS MERCHANDISE
                           </Text>
@@ -692,7 +740,8 @@ export default function Dropbox({
                             data: productNARUTOMERCHANDISE,
 
                             Heading: "NARUTO MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             OFFICIAL NARUTO MERCHANDISE
                           </Text>
@@ -704,7 +753,8 @@ export default function Dropbox({
                             data: productTALESSTORIES,
 
                             Heading: "TALES and STORIES Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">
                             TALES and STORIES
                           </Text>
@@ -716,7 +766,8 @@ export default function Dropbox({
                             data: productDCMERCHANDISE,
 
                             Heading: "DC MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             OFFICIAL DC MERCHANDISE
                           </Text>
@@ -729,7 +780,8 @@ export default function Dropbox({
                             data: productCOCACOLA,
 
                             Heading: "COCA COLA MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">
                             OFFICIAL COCA COLA MERCHANDISE
                           </Text>
@@ -747,7 +799,8 @@ export default function Dropbox({
                     onMouseLeave={() => handleMouseLeave()}
                     className={
                       scrollY > 43 ? "navdropbox sBT21" : "navdropbox sBT "
-                    }>
+                    }
+                  >
                     <Flex>
                       <Flex className="themeFlex">
                         <Link
@@ -756,7 +809,8 @@ export default function Dropbox({
                           state={{
                             data: productBewakoofM,
                             Heading: "Bewakoof® Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mT10">Bewakoof®</Text>
                         </Link>
                         <Link
@@ -765,7 +819,8 @@ export default function Dropbox({
                           state={{
                             data: productTOMJERRYM,
                             Heading: "TOM & JERRY Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             TOM & JERRY
                           </Text>
@@ -776,7 +831,8 @@ export default function Dropbox({
                           state={{
                             data: productCARTOONNETWORKM,
                             Heading: "CARTOON NETWORK Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             CARTOON NETWORK
                           </Text>
@@ -787,7 +843,8 @@ export default function Dropbox({
                           state={{
                             data: productDISNEYMERCHANDISEM,
                             Heading: "DISNEY MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             DISNEY MERCHANDISE
                           </Text>
@@ -798,7 +855,8 @@ export default function Dropbox({
                           state={{
                             data: productBrownMochaM,
                             Heading: "Brown Mocha Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Brown Mocha</Text>
                         </Link>
                         <Link
@@ -807,7 +865,8 @@ export default function Dropbox({
                           state={{
                             data: productCampusSutraM,
                             Heading: "Campus Sutra Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Campus Sutra</Text>
                         </Link>
                         <Link
@@ -816,7 +875,8 @@ export default function Dropbox({
                           state={{
                             data: productRodamoM,
                             Heading: "Rodamo Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Rodamo</Text>
                         </Link>
                         <Link
@@ -825,7 +885,8 @@ export default function Dropbox({
                           state={{
                             data: productInstafabPlusM,
                             Heading: "Instafab Plus Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Instafab Plus</Text>
                         </Link>
                         <Link
@@ -834,7 +895,8 @@ export default function Dropbox({
                           state={{
                             data: productBewakoofAirM,
                             Heading: " Bewakoof Air® 1.0 Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">
                             Bewakoof Air® 1.0
                           </Text>
@@ -845,7 +907,8 @@ export default function Dropbox({
                           state={{
                             data: productSAVVAOM,
                             Heading: "SAVVAO Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">SAVVAO</Text>
                         </Link>
                         <Link
@@ -854,7 +917,8 @@ export default function Dropbox({
                           state={{
                             data: productShoresM,
                             Heading: "7 Shores Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">7 Shores</Text>
                         </Link>
                       </Flex>
@@ -865,7 +929,8 @@ export default function Dropbox({
                           state={{
                             data: productBelliskeyM,
                             Heading: "Belliskey Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mT10">Belliskey</Text>
                         </Link>
                         <Link
@@ -874,7 +939,8 @@ export default function Dropbox({
                           state={{
                             data: productTISTABENEM,
                             Heading: "TISTABENE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">TISTABENE</Text>
                         </Link>
                         <Link
@@ -883,7 +949,8 @@ export default function Dropbox({
                           state={{
                             data: productPEANUTSM,
                             Heading: " PEANUTS MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             PEANUTS MERCHANDISE
                           </Text>
@@ -894,7 +961,8 @@ export default function Dropbox({
                           state={{
                             data: productRigoM,
                             Heading: "Rigo Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">Rigo</Text>
                         </Link>
                         <Link
@@ -903,7 +971,8 @@ export default function Dropbox({
                           state={{
                             data: productGARFIELDMERCHANDISEM,
                             Heading: "GARFIELD MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             GARFIELD MERCHANDISE
                           </Text>
@@ -914,7 +983,8 @@ export default function Dropbox({
                           state={{
                             data: productMINIONSMERCHANDISEM,
                             Heading: "MINIONS MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             MINIONS MERCHANDISE
                           </Text>
@@ -925,7 +995,8 @@ export default function Dropbox({
                           state={{
                             data: productNARUTOM,
                             Heading: "NARUTO MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             NARUTO MERCHANDISE
                           </Text>
@@ -936,7 +1007,8 @@ export default function Dropbox({
                           state={{
                             data: productXYXXM,
                             Heading: "XYXX Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">XYXX</Text>
                         </Link>
                         <Link
@@ -945,7 +1017,8 @@ export default function Dropbox({
                           state={{
                             data: productDCMERCHANDISEM,
                             Heading: "DC MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             DC MERCHANDISE
                           </Text>
@@ -956,7 +1029,8 @@ export default function Dropbox({
                           state={{
                             data: productKottyM,
                             Heading: "Kotty Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Kotty</Text>
                         </Link>
                       </Flex>
@@ -967,7 +1041,8 @@ export default function Dropbox({
                           state={{
                             data: productTrueBuyWorldM,
                             Heading: " TrueBuyWorld Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mT10 ">
                             TrueBuyWorld
                           </Text>
@@ -978,7 +1053,8 @@ export default function Dropbox({
                           state={{
                             data: productBushirtM,
                             Heading: "Bushirt Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Bushirt</Text>
                         </Link>
                         <Link
@@ -987,7 +1063,8 @@ export default function Dropbox({
                           state={{
                             data: productINDICLUBM,
                             Heading: "INDICLUB Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">INDICLUB</Text>
                         </Link>
                         <Link
@@ -996,7 +1073,8 @@ export default function Dropbox({
                           state={{
                             data: productBstoriesM,
                             Heading: "Bstories Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">Bstories</Text>
                         </Link>
                         <Link
@@ -1005,7 +1083,8 @@ export default function Dropbox({
                           state={{
                             data: productShopolicsM,
                             Heading: "Shopolics Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">Shopolics</Text>
                         </Link>
                         <Link
@@ -1014,7 +1093,8 @@ export default function Dropbox({
                           state={{
                             data: productNASAM,
                             Heading: " NASA Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             NASA MERCHANDISE
                           </Text>
@@ -1025,7 +1105,8 @@ export default function Dropbox({
                           state={{
                             data: productHOUSEDRAGONM,
                             Heading: "HOUSE OF THE DRAGON Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             HOUSE OF THE DRAGON
                           </Text>
@@ -1036,7 +1117,8 @@ export default function Dropbox({
                           state={{
                             data: productBLANCKM,
                             Heading: "BLANCK Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">BLANCK</Text>
                         </Link>
                         <Link
@@ -1045,7 +1127,8 @@ export default function Dropbox({
                           state={{
                             data: productThomasScottM,
                             Heading: "Thomas Scott Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             Thomas Scott
                           </Text>
@@ -1056,7 +1139,8 @@ export default function Dropbox({
                           state={{
                             data: productDAILYOUTFITSM,
                             Heading: " THE DAILY OUTFITS Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">
                             THE DAILY OUTFITS
                           </Text>
@@ -1069,7 +1153,8 @@ export default function Dropbox({
                           state={{
                             data: productBewakoofAmericanPimaM,
                             Heading: " Bewakoof American Pima Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mT10">
                             Bewakoof American Pima
                           </Text>
@@ -1080,7 +1165,8 @@ export default function Dropbox({
                           state={{
                             data: productSTARWARS,
                             Heading: "STAR WARS Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mT10">
                             STAR WARS MERCHANDISE
                           </Text>
@@ -1091,7 +1177,8 @@ export default function Dropbox({
                           state={{
                             data: productOldGreyM,
                             Heading: "Old Grey Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">Old Grey</Text>
                         </Link>
                         <Link
@@ -1100,7 +1187,8 @@ export default function Dropbox({
                           state={{
                             data: productAlstyleM,
                             Heading: "Alstyle Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">Alstyle</Text>
                         </Link>
                         <Link
@@ -1109,7 +1197,8 @@ export default function Dropbox({
                           state={{
                             data: productKraniumM,
                             Heading: "Kranium Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">Kranium</Text>
                         </Link>
                         <Link
@@ -1118,7 +1207,8 @@ export default function Dropbox({
                           state={{
                             data: productMadOverPrintM,
                             Heading: "MadOverPrint Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             MadOverPrint
                           </Text>
@@ -1129,7 +1219,8 @@ export default function Dropbox({
                           state={{
                             data: productSmugglerzM,
                             Heading: "Smugglerz Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">Smugglerz</Text>
                         </Link>
                         <Link
@@ -1138,7 +1229,8 @@ export default function Dropbox({
                           state={{
                             data: productFlynoffM,
                             Heading: "Flynoff Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Flynoff</Text>
                         </Link>
                         <Link
@@ -1147,7 +1239,8 @@ export default function Dropbox({
                           state={{
                             data: productBreakbounceM,
                             Heading: "Breakbounce Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             Breakbounce
                           </Text>
@@ -1158,7 +1251,8 @@ export default function Dropbox({
                           state={{
                             data: productChkokkoM,
                             Heading: "Chkokko Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Chkokko</Text>
                         </Link>
                       </Flex>
@@ -1170,7 +1264,8 @@ export default function Dropbox({
                             data: productHARRYPOTTERM,
                             Heading:
                               "OFFICIAL HARRY POTTER MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mT10">
                             OFFICIAL HARRY POTTER MERCHANDISE
                           </Text>
@@ -1181,7 +1276,8 @@ export default function Dropbox({
                           state={{
                             data: productMARVELMERCHANDISEM,
                             Heading: "OFFICIAL MARVEL MERCHANDISE Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1 mR10p">
                             OFFICIAL MARVEL MERCHANDISE
                           </Text>
@@ -1192,7 +1288,8 @@ export default function Dropbox({
                           state={{
                             data: productHubberholmeM,
                             Heading: "Hubberholme Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Hubberholme</Text>
                         </Link>
                         <Link
@@ -1201,7 +1298,8 @@ export default function Dropbox({
                           state={{
                             data: productChkokkoM,
                             Heading: "Chkokko Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Chkokko</Text>
                         </Link>
                         <Link
@@ -1210,7 +1308,8 @@ export default function Dropbox({
                           state={{
                             data: productBreakbounceM,
                             Heading: "Breakbounce Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Breakbounce</Text>
                         </Link>
                         <Link
@@ -1219,7 +1318,8 @@ export default function Dropbox({
                           state={{
                             data: productUrbanScottishM,
                             Heading: "Urban Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Urban Scottish</Text>
                         </Link>
                         <Link
@@ -1228,7 +1328,8 @@ export default function Dropbox({
                           state={{
                             data: productBlueTygaM,
                             Heading: "Blue Tyga Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">Blue Tyga</Text>
                         </Link>
                         <Link
@@ -1237,7 +1338,8 @@ export default function Dropbox({
                           state={{
                             data: productBEWAKOOFXSTREETWEARM,
                             Heading: "BEWAKOOF X STREETWEAR Collection",
-                          }}>
+                          }}
+                        >
                           <Text className="navdropboxh1">
                             BEWAKOOF X STREETWEAR
                           </Text>
@@ -1252,7 +1354,8 @@ export default function Dropbox({
           <ListItem
             className={scrollY > 43 ? "navlist2" : "navList"}
             onMouseEnter={() => handleMouseEnter(" SHOES BY COLOR")}
-            onMouseLeave={() => handleMouseLeave()}>
+            onMouseLeave={() => handleMouseLeave()}
+          >
             SHOES BY COLOR
             <IconButton
               variant="outline"
@@ -1269,7 +1372,8 @@ export default function Dropbox({
                     onMouseLeave={() => handleMouseLeave()}
                     className={
                       scrollY > 43 ? "navdropbox sBC2W" : "navdropbox sBCW"
-                    }>
+                    }
+                  >
                     <Link
                       to="/category"
                       style={{ textDecoration: "none" }}
@@ -1277,7 +1381,8 @@ export default function Dropbox({
                         data: productWomenBlackData,
                         Banner: bB,
                         Heading: "Women Black Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1 mT10"> Black</Text>
                     </Link>
                     <Link
@@ -1286,7 +1391,8 @@ export default function Dropbox({
                       state={{
                         data: productWomenBrownData,
                         Heading: "Women Brown Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Brown</Text>
                     </Link>
                     <Link
@@ -1296,7 +1402,8 @@ export default function Dropbox({
                         Banner: wB,
                         data: productWomenWhiteData,
                         Heading: "Women White Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">White</Text>
                     </Link>
                     <Link
@@ -1305,7 +1412,8 @@ export default function Dropbox({
                       state={{
                         data: productWomenGreyData,
                         Heading: "Women Grey Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Grey</Text>
                     </Link>
                     <Link
@@ -1314,7 +1422,8 @@ export default function Dropbox({
                       state={{
                         data: productWomenOrangeData,
                         Heading: "Women Orange Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1 mT10"> Orange</Text>
                     </Link>
                     <Link
@@ -1324,7 +1433,8 @@ export default function Dropbox({
                         data: productWomenBlueData,
                         Heading: "Women Blue Collection",
                         Banner: blueBanner,
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Blue</Text>
                     </Link>
                     <Link
@@ -1333,7 +1443,8 @@ export default function Dropbox({
                       state={{
                         data: productWomenGreenData,
                         Heading: "Women Green Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Green</Text>
                     </Link>
                     <Link
@@ -1342,7 +1453,8 @@ export default function Dropbox({
                       state={{
                         data: productWomenRedData,
                         Heading: "Women Red Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Red</Text>
                     </Link>
                     <Link
@@ -1352,7 +1464,8 @@ export default function Dropbox({
                         data: productWomenPinkData,
                         Banner: bP,
                         Heading: "Women Pink Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1 mT10">Pink</Text>
                     </Link>
                     <Link
@@ -1362,7 +1475,8 @@ export default function Dropbox({
                         data: productWomenYellowData,
 
                         Heading: "Women Yellow Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Yellow</Text>
                     </Link>
                     <Link
@@ -1372,7 +1486,8 @@ export default function Dropbox({
                         data: productWomenPurpleData,
 
                         Heading: "Women Purple Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Purple</Text>
                     </Link>
                     <Link
@@ -1383,7 +1498,8 @@ export default function Dropbox({
                         Banner: bL,
 
                         Heading: "Women Lavender Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Lavender</Text>
                     </Link>
                     <Link
@@ -1393,7 +1509,8 @@ export default function Dropbox({
                         data: productWomenKhakiData,
 
                         Heading: "Women Khaki Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Khaki</Text>
                     </Link>
                     <Link
@@ -1402,7 +1519,8 @@ export default function Dropbox({
                       state={{
                         data: productWomenMaroonData,
                         Heading: "Women Maroon Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Maroon</Text>
                     </Link>
                   </Box>
@@ -1416,7 +1534,8 @@ export default function Dropbox({
                     onMouseLeave={() => handleMouseLeave()}
                     className={
                       scrollY > 43 ? "navdropbox sBC2" : "navdropbox sBC"
-                    }>
+                    }
+                  >
                     <Link
                       to="/category"
                       style={{ textDecoration: "none" }}
@@ -1424,7 +1543,8 @@ export default function Dropbox({
                         data: productMenBlackData,
 
                         Heading: "Men Black Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1 mT10"> Black</Text>
                     </Link>
                     <Link
@@ -1434,7 +1554,8 @@ export default function Dropbox({
                         data: productMenBrownData,
 
                         Heading: "Men Brown Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Brown</Text>
                     </Link>
                     <Link
@@ -1444,7 +1565,8 @@ export default function Dropbox({
                         data: productMenWhiteData,
 
                         Heading: "Men White Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">White</Text>
                     </Link>
                     <Link
@@ -1454,7 +1576,8 @@ export default function Dropbox({
                         data: productMenGreyData,
 
                         Heading: "Men Grey Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Grey</Text>
                     </Link>
                     <Link
@@ -1464,7 +1587,8 @@ export default function Dropbox({
                         data: productMenOrangeData,
 
                         Heading: "Men Orange Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1 mT10"> Orange</Text>
                     </Link>
                     <Link
@@ -1474,7 +1598,8 @@ export default function Dropbox({
                         data: productMenBlueData,
 
                         Heading: "Men Blue Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Blue</Text>
                     </Link>
                     <Link
@@ -1484,7 +1609,8 @@ export default function Dropbox({
                         data: productMenGreenData,
 
                         Heading: "Men Green Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Green</Text>
                     </Link>
                     <Link
@@ -1494,7 +1620,8 @@ export default function Dropbox({
                         data: productMenRedData,
 
                         Heading: "Men Red Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Red</Text>
                     </Link>
                     <Link
@@ -1504,7 +1631,8 @@ export default function Dropbox({
                         data: productMenPinkData,
 
                         Heading: "Men Pink Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1 mT10">Pink</Text>
                     </Link>
                     <Link
@@ -1514,7 +1642,8 @@ export default function Dropbox({
                         data: productMenYellowData,
 
                         Heading: "Men Yellow Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Yellow</Text>
                     </Link>
                     <Link
@@ -1524,7 +1653,8 @@ export default function Dropbox({
                         data: productMenPurpleData,
 
                         Heading: "Men Purple Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Purple</Text>
                     </Link>
                     <Link
@@ -1534,7 +1664,8 @@ export default function Dropbox({
                         data: productMenBeigeData,
 
                         Heading: "Men Beige Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Beige</Text>
                     </Link>
                     <Link
@@ -1544,7 +1675,8 @@ export default function Dropbox({
                         data: productMenKhakiData,
 
                         Heading: "Men Khaki Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Khaki</Text>
                     </Link>
                     <Link
@@ -1554,7 +1686,8 @@ export default function Dropbox({
                         data: productMenMaroonData,
 
                         Heading: "Men Maroon Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Maroon</Text>
                     </Link>
 
@@ -1565,7 +1698,8 @@ export default function Dropbox({
                         data: productMenCharcoalData,
 
                         Heading: "Men Charcoal Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Charcoal</Text>
                     </Link>
                     <Link
@@ -1575,7 +1709,8 @@ export default function Dropbox({
                         data: productMenSilverData,
 
                         Heading: "Men Silver Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Silver</Text>
                     </Link>
                     <Link
@@ -1585,7 +1720,8 @@ export default function Dropbox({
                         data: productMenCreamData,
 
                         Heading: "Men Cream Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Cream</Text>
                     </Link>
                     <Link
@@ -1595,7 +1731,8 @@ export default function Dropbox({
                         data: productMenOliveData,
 
                         Heading: "Men Olive Collection",
-                      }}>
+                      }}
+                    >
                       <Text className="navdropboxh1">Olive</Text>
                     </Link>
                   </Box>
@@ -1612,7 +1749,8 @@ export default function Dropbox({
                 margin: 0,
                 padding: 0,
                 color: "#58595b",
-              }}>
+              }}
+            >
               MEMBERSHIP
             </Link>
           </ListItem>
