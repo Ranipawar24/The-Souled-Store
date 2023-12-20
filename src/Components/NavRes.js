@@ -37,8 +37,7 @@ import MBS from "../assets/MBS.jpg";
 import MBJS from "../assets/MBJS.jpg";
 import bannerJ from "../assets/bannerJ.jpg";
 import jog from "../assets/jog.jpg";
-// import { fetchDataByType, } from "../fetch";
-// import { service, isNamePresent } from "../service";
+
 import React, { useEffect, useRef, useState } from "react";
 
 export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
@@ -46,9 +45,7 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
   const [scrollY, setScrollY] = useState(0);
   const [activeState, setActiveState] = useState();
   const [showSection, setShowSection] = useState("Men");
-  //const [searchItem, setSearchItem] = useState("");
-  // const [isDropdownOpen, setIsDropDownOpen] = useState(null);
-  // const [isDropdown, setIsDropDown] = useState(false);
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   // const [searchResults, setSearchResults] = useState("");
   const { isLoggedIn } = useSelector((state) => state.user);
@@ -58,8 +55,7 @@ export default function NavRes({ Heading, value, setBarOpen, barOpen }) {
   const data = useLocation();
   let { pathname } = data;
   const {
-    // productMenCollection,
-    // productWomenCollection,
+   
     productMenTshirtData,
     productMenShirtData,
     productMenSweaterData,

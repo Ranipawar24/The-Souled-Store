@@ -44,6 +44,9 @@ export default function ImageSlider({ w1, w2, w3, w4 }) {
     {
       url: w4,
     },
+    // {
+    //   url: w5,
+    // },
   ];
   return (
     <>
