@@ -10,17 +10,11 @@ const ImageSliderRes = ({ productImages, productImagesRes }) => {
     );
   };
 
-  //   const prevImage = () => {
-  //     setCurrentImageIndex((prevIndex) =>
-  //       prevIndex === 0 ? images.length - 1 : prevIndex - 1
-  //     );
-  //   };
-
-  // Auto-advance the slider
+ 
   useEffect(() => {
     const interval = setInterval(nextImage, 8000);
     return () => clearInterval(interval);
-    // eslint-disable-next-line
+   
   }, [currentImageIndex]);
 
   return (

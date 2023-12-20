@@ -69,7 +69,6 @@ export default function Home() {
     if (Object.keys(productsListFilter).length > 0) {
       dispatch(LOADING_ACTION(false));
     }
-    // eslint-disable-next-line no-use-before-define, react-hooks/exhaustive-deps
   }, [productsListFilter]);
   const {
     productWomenkurtiData,
@@ -129,7 +128,8 @@ export default function Home() {
                     active === "1" ? "thirdactive thirdnav" : "thirdnav"
                   }
                   id={"1"}
-                  onClick={handleClick}>
+                  onClick={handleClick}
+                >
                   Women
                 </Button>
                 |
@@ -138,7 +138,8 @@ export default function Home() {
                     active === "2" ? "thirdactive thirdnav" : "thirdnav"
                   }
                   id={"2"}
-                  onClick={handleClick}>
+                  onClick={handleClick}
+                >
                   Men
                 </Button>
               </NavLink>
@@ -217,7 +218,8 @@ export default function Home() {
                                     Banner: basicB,
                                     BannerRes: basis,
                                     Heading: "Women's Basics",
-                                  }}>
+                                  }}
+                                >
                                   <img
                                     src={basis}
                                     className="categoryImageMini"
@@ -232,7 +234,8 @@ export default function Home() {
                                     data: productWomenkurtiData,
                                     Heading: "Women Dresses",
                                     BannerRes: DW,
-                                  }}>
+                                  }}
+                                >
                                   <img
                                     src={DW}
                                     className="categoryImage"
@@ -248,7 +251,8 @@ export default function Home() {
                                     Banner: bannerJ,
                                     Heading: "Women Jumpsuit",
                                     BannerRes: JumpBannerSmall,
-                                  }}>
+                                  }}
+                                >
                                   <img
                                     src={JumpBannerSmall}
                                     className="categoryImage "
@@ -267,7 +271,8 @@ export default function Home() {
                                   data: productWomenTshirtData,
                                   Banner: basicB,
                                   Heading: "Women's Basics",
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={basis}
                                   className="categoryImage"
@@ -281,7 +286,8 @@ export default function Home() {
                                 state={{
                                   data: productWomenkurtiData,
                                   Heading: "Women Dresses",
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={DW}
                                   className="categoryImage"
@@ -300,7 +306,8 @@ export default function Home() {
                             state={{
                               data: productWomenJeansData,
                               Heading: "Women Jeans",
-                            }}>
+                            }}
+                          >
                             <img
                               src={JeansSmall}
                               className="categoryImage"
@@ -315,7 +322,8 @@ export default function Home() {
                               data: productWomenTshirtData,
                               Banner: basicB,
                               Heading: "Women's Basics",
-                            }}>
+                            }}
+                          >
                             <img src={basis} className="categoryImage" alt="" />
                           </Link>
                         </Flex>
@@ -327,7 +335,8 @@ export default function Home() {
                               data: productWomenJumpsuitData,
                               Banner: bannerJ,
                               Heading: "Women Jumpsuit",
-                            }}>
+                            }}
+                          >
                             <img
                               src={JumpBannerSmall}
                               className="categoryImage"
@@ -352,7 +361,8 @@ export default function Home() {
                                     data: productMenTshirtData,
                                     Heading: "Men's Oversized T-Shirts",
                                     BannerRes: c1,
-                                  }}>
+                                  }}
+                                >
                                   <img
                                     src={c1}
                                     className="categoryImage"
@@ -367,7 +377,8 @@ export default function Home() {
                                     data: productMenShirtData,
                                     Heading: "Men's Shirt",
                                     BannerRes: c2,
-                                  }}>
+                                  }}
+                                >
                                   <Image
                                     src={c2}
                                     className="categoryImage"
@@ -383,7 +394,8 @@ export default function Home() {
                                     data: productMenTshirtData,
                                     Heading: "Men's T-Shirts",
                                     BannerRes: c3,
-                                  }}>
+                                  }}
+                                >
                                   <img
                                     src={c3}
                                     className="categoryImage "
@@ -401,7 +413,8 @@ export default function Home() {
                                 state={{
                                   data: productMenTshirtData,
                                   Heading: "Men's Oversized T-Shirts",
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={c1}
                                   className="categoryImage"
@@ -415,7 +428,8 @@ export default function Home() {
                                 state={{
                                   data: productMenShirtData,
                                   Heading: "Men's Shirt",
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={c2}
                                   className="categoryImage"
@@ -434,7 +448,8 @@ export default function Home() {
                             state={{
                               data: productMenTshirtData,
                               Heading: "Men's Oversized T-Shirts",
-                            }}>
+                            }}
+                          >
                             <img
                               src={c1}
                               className="categoryImage"
@@ -448,7 +463,8 @@ export default function Home() {
                             state={{
                               data: productMenShirtData,
                               Heading: "Men's Shirt",
-                            }}>
+                            }}
+                          >
                             <img
                               src={c2}
                               className="categoryImage"
@@ -463,7 +479,8 @@ export default function Home() {
                             state={{
                               data: productMenTshirtData,
                               Heading: "Men's T-Shirts",
-                            }}>
+                            }}
+                          >
                             <img
                               src={c3}
                               className="categoryImage "
@@ -484,7 +501,8 @@ export default function Home() {
                     <Flex
                       alignContent="center"
                       flexDirection="column"
-                      width="100%">
+                      width="100%"
+                    >
                       <Flex className="heading1">SHOP BY COLOR</Flex>
                     </Flex>
                     <WGallery />
@@ -501,7 +519,8 @@ export default function Home() {
                         <Flex
                           alignContent="center"
                           flexDirection="column"
-                          width="100%">
+                          width="100%"
+                        >
                           <Flex className="heading1">CATEGORIES</Flex>
                           <Flex justifyContent="center" flexDirection="column">
                             <Container className="iBoxMini">
@@ -512,7 +531,8 @@ export default function Home() {
                                   data: productWomenTshirtData,
                                   Heading: "Women T-Shirt",
                                   BannerRes: btS,
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={btS}
                                   className="categoryImage"
@@ -528,7 +548,8 @@ export default function Home() {
                                   BannerRes: shirt1,
                                   data: productWomenshirtsData,
                                   Heading: "Women's Shirts",
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={shirt1}
                                   className="categoryImage "
@@ -544,7 +565,8 @@ export default function Home() {
                                   BannerRes: cargo,
                                   Heading: "Women Joggers",
                                   data: productWomenJoggersData,
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={cargo}
                                   className="categoryImage"
@@ -560,7 +582,8 @@ export default function Home() {
                         <Flex
                           alignContent="center"
                           flexDirection="column"
-                          width="100%">
+                          width="100%"
+                        >
                           <Flex className="heading1">CATEGORIES</Flex>
                           <Flex justifyContent="center" height="28rem">
                             <Container className="iBox">
@@ -571,7 +594,8 @@ export default function Home() {
 
                                   data: productWomenTshirtData,
                                   Heading: "Women T-Shirt",
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={btS}
                                   className="categoryImage"
@@ -587,7 +611,8 @@ export default function Home() {
 
                                   Heading: "Women Joggers",
                                   data: productWomenJoggersData,
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={cargo}
                                   className="categoryImage"
@@ -605,7 +630,8 @@ export default function Home() {
                     <Flex
                       alignContent="center"
                       flexDirection="column"
-                      width="100%">
+                      width="100%"
+                    >
                       <Flex className="heading1">CATEGORIES</Flex>
                       <Flex justifyContent="center" height="28rem">
                         <Container className="iBox">
@@ -615,7 +641,8 @@ export default function Home() {
                               Banner: bannerT,
                               data: productWomenTshirtData,
                               Heading: "Women T-Shirt",
-                            }}>
+                            }}
+                          >
                             <img src={btS} className="categoryImage" alt="" />
                           </Link>
                         </Container>
@@ -627,7 +654,8 @@ export default function Home() {
 
                               Heading: "Women Joggers",
                               data: productWomenJoggersData,
-                            }}>
+                            }}
+                          >
                             <img src={cargo} className="categoryImage" alt="" />
                           </Link>
                         </Container>
@@ -638,7 +666,8 @@ export default function Home() {
                               Banner: bannerBS,
                               data: productWomenshirtsData,
                               Heading: "Women's Shirts",
-                            }}>
+                            }}
+                          >
                             <img
                               src={shirt1}
                               className="categoryImage "
@@ -660,7 +689,8 @@ export default function Home() {
                         <Flex
                           alignContent="center"
                           flexDirection="column"
-                          width="100%">
+                          width="100%"
+                        >
                           <Flex className="heading1">CATEGORIES</Flex>
                           <Flex justifyContent="center" flexDirection="column">
                             <Container className="iBoxMini">
@@ -671,7 +701,8 @@ export default function Home() {
                                   data: productMenJoggersData,
                                   Heading: "Men's Joggers",
                                   BannerRes: menJog,
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={menJog}
                                   className="categoryImage"
@@ -687,7 +718,8 @@ export default function Home() {
                                   data: productMenShortsData,
                                   Heading: "Men's Shorts",
                                   BannerRes: menShorts,
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={menShorts}
                                   className="categoryImage"
@@ -703,7 +735,8 @@ export default function Home() {
                                   data: productMenJeansData,
                                   Heading: "Men's Jeans",
                                   BannerRes: menJeans,
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={menJeans}
                                   className="categoryImage "
@@ -719,7 +752,8 @@ export default function Home() {
                         <Flex
                           alignContent="center"
                           flexDirection="column"
-                          width="100%">
+                          width="100%"
+                        >
                           <Flex className="heading1">CATEGORIES</Flex>
                           <Flex justifyContent="center" height="28rem">
                             <Container className="iBox">
@@ -729,7 +763,8 @@ export default function Home() {
                                   Banner: MBJ,
                                   data: productMenJoggersData,
                                   Heading: "Men's Joggers",
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={menJog}
                                   className="categoryImage"
@@ -744,7 +779,8 @@ export default function Home() {
                                   Banner: MBJS,
                                   data: productMenJeansData,
                                   Heading: "Men's Jeans",
-                                }}>
+                                }}
+                              >
                                 <img
                                   src={menJeans}
                                   className="categoryImage "
@@ -762,7 +798,8 @@ export default function Home() {
                     <Flex
                       alignContent="center"
                       flexDirection="column"
-                      width="100%">
+                      width="100%"
+                    >
                       <Flex className="heading1">CATEGORIES</Flex>
                       <Flex justifyContent="center" height="28rem">
                         <Container className="iBox">
@@ -772,7 +809,8 @@ export default function Home() {
                               Banner: MBS,
                               data: productMenShortsData,
                               Heading: "Men's Shorts",
-                            }}>
+                            }}
+                          >
                             <img
                               src={menShorts}
                               className="categoryImage"
@@ -787,7 +825,8 @@ export default function Home() {
                               Banner: MBJ,
                               data: productMenJoggersData,
                               Heading: "Men's Joggers",
-                            }}>
+                            }}
+                          >
                             <img
                               src={menJog}
                               className="categoryImage"
@@ -802,7 +841,8 @@ export default function Home() {
                               Banner: MBJS,
                               data: productMenJeansData,
                               Heading: "Men's Jeans",
-                            }}>
+                            }}
+                          >
                             <img
                               src={menJeans}
                               className="categoryImage "
